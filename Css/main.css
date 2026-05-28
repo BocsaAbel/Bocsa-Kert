@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    background: url('../Imgs/gardening-spring-flowers-yellow-daffodils-with-garden-supplies-earth-day-wooden-letters-with-inscription-home.jpg') no-repeat center center fixed;
+    background: url('../Imgs/515590_Sky_Keukenhof_1920x1080-ezgif.com-video-to-gif-converter.gif') no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -38,7 +38,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    color: #214d22;
+    color: #2d852f;
 }
 
 
@@ -74,6 +74,7 @@ body {
 
 .slider-placeholder {
     font-size: 18px;
-    color: #ccc;
+    color: #ffffff;
     font-style: italic;
 }
+
