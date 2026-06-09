@@ -87,16 +87,72 @@ body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 16%, rgba(255, 255, 255, 0) 100%);
 }
 
-.rolunk-kep1{
-    border-radius: 10px;
-    width: 500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/* Rólunk szakasz stílusok */
+.rolunk-black {
+    padding: 40px 20px;
+    background: #000;
+    color: #fff;
 }
 
-.rolunk-black{
-    background-color: #000;
+.rolunk-black .cim {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Ha a HTML-t úgy alakítod, hogy kép + szöveg sorok legyenek: */
+.rolunk-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 30px auto;
+    max-width: 1100px;
+    flex-wrap: wrap;
+}
+
+.rolunk-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.rolunk-img {
+    width: 48%;
+    max-width: 480px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.rolunk-text {
+    width: 48%;
+    color: #e0e0e0;
+    line-height: 1.5;
+}
+
+/* Meglévő .rolunk-kep1 osztály finomítása (jelenlegi HTML-hez) */
+.rolunk-kep1 {
+    border-radius: 10px;
     width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    object-fit: cover;
+}
+
+/* Reszponzív viselkedés mobilon */
+@media (max-width: 800px) {
+    .rolunk-row,
+    .rolunk-row.reverse {
+        flex-direction: column;
+    }
+
+    .rolunk-img,
+    .rolunk-text,
+    .rolunk-kep1 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .rolunk-img {
+        height: auto;
+    }
 }
 
