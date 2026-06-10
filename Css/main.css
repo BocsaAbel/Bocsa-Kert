@@ -87,7 +87,7 @@ body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 16%, rgba(255, 255, 255, 0) 100%);
 }
 
-/* Rólunk szakasz stílusok */
+
 .rolunk-black {
     padding: 40px 20px;
     background: #000;
@@ -99,7 +99,7 @@ body {
     text-align: center;
 }
 
-/* Ha a HTML-t úgy alakítod, hogy kép + szöveg sorok legyenek: */
+
 .rolunk-row {
     display: flex;
     gap: 20px;
@@ -127,7 +127,7 @@ body {
     line-height: 1.5;
 }
 
-/* Meglévő .rolunk-kep1 osztály finomítása (jelenlegi HTML-hez) */
+
 .rolunk-kep1 {
     border-radius: 10px;
     width: 100%;
@@ -137,7 +137,25 @@ body {
     object-fit: cover;
 }
 
-/* Reszponzív viselkedés mobilon */
+.slider-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2d852f;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.slider-button:hover {
+    background-color: #1e5f1f;
+    transform: scale(1.05);
+}
+
+
 @media (max-width: 800px) {
     .rolunk-row,
     .rolunk-row.reverse {
