@@ -87,56 +87,6 @@ body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 16%, rgba(255, 255, 255, 0) 100%);
 }
 
-
-.rolunk-black {
-    padding: 40px 20px;
-    background: #000;
-    color: #fff;
-}
-
-.rolunk-black .cim {
-    margin-top: 0;
-    text-align: center;
-}
-
-
-.rolunk-row {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    margin: 30px auto;
-    max-width: 1100px;
-    flex-wrap: wrap;
-}
-
-.rolunk-row.reverse {
-    flex-direction: row-reverse;
-}
-
-.rolunk-img {
-    width: 48%;
-    max-width: 480px;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 6px;
-}
-
-.rolunk-text {
-    width: 48%;
-    color: #e0e0e0;
-    line-height: 1.5;
-}
-
-
-.rolunk-kep1 {
-    border-radius: 10px;
-    width: 100%;
-    max-width: 500px;
-    display: block;
-    margin: 20px auto;
-    object-fit: cover;
-}
-
 .slider-button {
     display: inline-block;
     padding: 15px 30px;
@@ -155,22 +105,79 @@ body {
     transform: scale(1.05);
 }
 
+.rolunk-black {
+    padding: 60px 20px;
+    background: linear-gradient(180deg, #000 0%, #1a1a1a 100%);
+    color: #fff;
+    text-align: center;
+}
+
+.rolunk-black .cim {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #2d852f;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.rolunk-row {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+}
+
+.rolunk-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.rolunk-img {
+    width: 48%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rolunk-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.rolunk-text {
+    width: 48%;
+    color: #e0e0e0;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.rolunk-text p {
+    margin: 0;
+}
 
 @media (max-width: 800px) {
     .rolunk-row,
     .rolunk-row.reverse {
         flex-direction: column;
+        text-align: center;
     }
 
     .rolunk-img,
-    .rolunk-text,
-    .rolunk-kep1 {
+    .rolunk-text {
         width: 100%;
-        max-width: 100%;
     }
 
     .rolunk-img {
         height: auto;
     }
 }
-
